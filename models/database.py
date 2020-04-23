@@ -16,4 +16,27 @@ cursor.execute("""
     )
 """)
 
+# rebates schema
+cursor.execute("""
+    CREATE TABLE IF NOT EXISTS rebates (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        rebate TEXT NOT NULL,
+        value INTEGER NOT NULL,
+        created_at TEXT NOT NULL,
+        expires_at TEXT NOT NULL
+    )
+""")
+
+# rebates schema
+cursor.execute("""
+    CREATE TABLE IF NOT EXISTS tax_threshold (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        age INTEGER NOT NULL,
+        calculation TEXT NOT NULL,
+        threshold INTEGER NOT NULL,
+        created_at TEXT NOT NULL,
+        expires_at TEXT NOT NULL
+    )
+""")
+
 connector.close()
