@@ -1,14 +1,14 @@
-from flask import Flask
+from flask import Flask, render_template
 
 from models import paye
+from models import tax_bracket
 
 app = Flask(__name__)
 
 
 @app.route('/')
-def hello_world():
+def index():
     method = paye.PAYE
-
     result = method(age_of_employee=35,
                     periods_per_annum=12,
                     ytd_non_bonus_taxable=1,
@@ -16,10 +16,11 @@ def hello_world():
                     periods_to_date=1,
                     ytd_paye=25)
 
-    total_earnings = result.total_projected_annual_taxable_earnings()
-    tax_due = result.tax_due()
-    return 'Total Projected Annual Taxable Earnings: {} \n ' \
-           'Total Tax Earnings: {}'.format(total_earnings, tax_due)
+    return render_template('index.html',
+                           total_earnings=result.total_projected_annual_taxable_earnings(),
+                           total_due=result.tax_due(),
+                           tax_bracket=tax_bracket.get_tax_bracket(),
+                           tax_dates=tax_bracket.get_tax_date())
 
 
 if __name__ == '__main__':

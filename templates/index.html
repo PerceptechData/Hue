@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block head %}
+    {{ super() }}
+{% endblock %}
+{% block content %}
+    <p>Total Earnings: {{ total_earnings }}</p>
+    <p>Total Tax Due: {{ total_due }}</p>
+    {% include 'views/tax_table.html' %}
+{% endblock %}

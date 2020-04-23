@@ -20,11 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8bfe4508-1fcb-46ba-afd1-ba52c22ef988" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/models/rebate.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/views/tax_table.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Hue.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Hue.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database.db" beforeDir="false" afterPath="$PROJECT_DIR$/database.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/paye.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/paye.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/tax_bracket.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/tax_bracket.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,6 +37,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -51,11 +53,13 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/database.db" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.templateLanguages.PyTemplateLanguageModulesConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -63,9 +67,7 @@
     </key>
   </component>
   <component name="RunManager" selected="Python.app">
-    <configuration name="console_1.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
-      <script-file value="$APPLICATION_CONFIG_DIR$/consoles/db/cd78df92-97c0-4e91-b356-2b525bab2983/console_1.sql" />
-      <script-mode>FILE</script-mode>
+    <configuration name="tax_table.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Hue/templates/views/tax_table.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -160,9 +162,9 @@
       <list>
         <item itemvalue="Python.app" />
         <item itemvalue="Python.tax_bracket" />
+        <item itemvalue="JavaScript Debug.tax_table.html" />
         <item itemvalue="Python.rebate" />
         <item itemvalue="Python.database" />
-        <item itemvalue="Database Script.console_1.sql" />
       </list>
     </recent_temporary>
   </component>
@@ -180,7 +182,7 @@
       <workItem from="1587558589153" duration="8937000" />
       <workItem from="1587619786708" duration="2707000" />
       <workItem from="1587622504560" duration="1960000" />
-      <workItem from="1587624474085" duration="2581000" />
+      <workItem from="1587624474085" duration="6188000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1587558686086</created>
@@ -210,7 +212,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587624991535</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="added tax due to classmethod">
+      <created>1587627223795</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1587627223795</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -233,7 +242,8 @@
     <MESSAGE value="WIP: added paye class method and tax bracket function" />
     <MESSAGE value="added a database for tax information&#10;refactoring total_projected_annual_taxable_earnings" />
     <MESSAGE value="added rebates and threshold" />
-    <option name="LAST_COMMIT_MESSAGE" value="added rebates and threshold" />
+    <MESSAGE value="added tax due to classmethod" />
+    <option name="LAST_COMMIT_MESSAGE" value="added tax due to classmethod" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2472" y="183" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587626480379">
@@ -256,22 +266,22 @@
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
     <state x="2740" y="437" key="Github.Dialog.Accounts.Choose/0.0.1536.834/1920.0.1920.1050@1920.0.1920.1050" timestamp="1587571576982" />
-    <state width="1877" height="257" key="GridCell.Tab.0.bottom" timestamp="1587627035764">
+    <state width="1877" height="257" key="GridCell.Tab.0.bottom" timestamp="1587631380344">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="257" key="GridCell.Tab.0.bottom/0.0.1536.834/1920.0.1920.1050@1920.0.1920.1050" timestamp="1587627035764" />
-    <state width="1877" height="257" key="GridCell.Tab.0.center" timestamp="1587627035764">
+    <state width="1877" height="257" key="GridCell.Tab.0.bottom/0.0.1536.834/1920.0.1920.1050@1920.0.1920.1050" timestamp="1587631380344" />
+    <state width="1877" height="257" key="GridCell.Tab.0.center" timestamp="1587631380344">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="257" key="GridCell.Tab.0.center/0.0.1536.834/1920.0.1920.1050@1920.0.1920.1050" timestamp="1587627035764" />
-    <state width="1877" height="257" key="GridCell.Tab.0.left" timestamp="1587627035764">
+    <state width="1877" height="257" key="GridCell.Tab.0.center/0.0.1536.834/1920.0.1920.1050@1920.0.1920.1050" timestamp="1587631380344" />
+    <state width="1877" height="257" key="GridCell.Tab.0.left" timestamp="1587631380344">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="257" key="GridCell.Tab.0.left/0.0.1536.834/1920.0.1920.1050@1920.0.1920.1050" timestamp="1587627035764" />
-    <state width="1877" height="257" key="GridCell.Tab.0.right" timestamp="1587627035764">
+    <state width="1877" height="257" key="GridCell.Tab.0.left/0.0.1536.834/1920.0.1920.1050@1920.0.1920.1050" timestamp="1587631380344" />
+    <state width="1877" height="257" key="GridCell.Tab.0.right" timestamp="1587631380344">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="257" key="GridCell.Tab.0.right/0.0.1536.834/1920.0.1920.1050@1920.0.1920.1050" timestamp="1587627035764" />
+    <state width="1877" height="257" key="GridCell.Tab.0.right/0.0.1536.834/1920.0.1920.1050@1920.0.1920.1050" timestamp="1587631380344" />
     <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1587626753572">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
@@ -288,10 +298,14 @@
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
     <state width="1877" height="352" key="GridCell.Tab.1.right/0.0.1536.834/1920.0.1920.1050@1920.0.1920.1050" timestamp="1587626753572" />
-    <state x="2472" y="258" key="Vcs.Push.Dialog.v2" timestamp="1587624993230">
+    <state x="2381" y="170" key="SettingsEditor" timestamp="1587628179632">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
-    <state x="2472" y="258" key="Vcs.Push.Dialog.v2/0.0.1536.834/1920.0.1920.1050@1920.0.1920.1050" timestamp="1587624993230" />
+    <state x="2381" y="170" key="SettingsEditor/0.0.1536.834/1920.0.1920.1050@1920.0.1920.1050" timestamp="1587628179632" />
+    <state x="2472" y="258" key="Vcs.Push.Dialog.v2" timestamp="1587627225495">
+      <screen x="1920" y="0" width="1920" height="1050" />
+    </state>
+    <state x="2472" y="258" key="Vcs.Push.Dialog.v2/0.0.1536.834/1920.0.1920.1050@1920.0.1920.1050" timestamp="1587627225495" />
     <state x="2742" y="412" width="316" height="244" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1587620680775">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
@@ -307,8 +321,8 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Hue$rebate.coverage" NAME="rebate Coverage Results" MODIFIED="1587626341038" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
-    <SUITE FILE_PATH="coverage/Hue$tax_bracket.coverage" NAME="tax_bracket Coverage Results" MODIFIED="1587627035758" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
-    <SUITE FILE_PATH="coverage/Hue$app.coverage" NAME="app Coverage Results" MODIFIED="1587627122745" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Hue$tax_bracket.coverage" NAME="tax_bracket Coverage Results" MODIFIED="1587631022813" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
+    <SUITE FILE_PATH="coverage/Hue$app.coverage" NAME="app Coverage Results" MODIFIED="1587631380333" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Hue$database.coverage" NAME="database Coverage Results" MODIFIED="1587624741184" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
     <SUITE FILE_PATH="coverage/Hue$paye.coverage" NAME="paye Coverage Results" MODIFIED="1587561802507" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
   </component>

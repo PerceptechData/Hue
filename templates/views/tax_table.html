@@ -1,0 +1,7 @@
+<h3>Income Tax: Individuals and Trusts</h3>
+
+<p>Tax rates from {{ tax_dates[0] }} to {{ tax_dates[1] }}:</p>
+<br>
+<p>Individuals and special trusts:</p>
+{{ tax_bracket.to_html(classes="table table-striped", index=False) | safe }}
+<br>

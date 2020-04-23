@@ -54,3 +54,12 @@ def get_taxable_percentage(t):
     for i in range(0, 8):
         if csv['taxable_income_min'][i] < t <= csv['taxable_income_max'][i]:
             return csv['taxable_percentage'][i]
+
+
+def get_tax_date():
+    """
+    return the created and expire date for current tax bracket information
+    :return: tuple of start and expire dates respectively
+    """
+    csv = get_tax_bracket()
+    return csv['created_at'].max(), csv['expires_at'].max()
