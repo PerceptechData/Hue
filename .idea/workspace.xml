@@ -20,13 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8bfe4508-1fcb-46ba-afd1-ba52c22ef988" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/models/paye.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/tax_bracket.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requrements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/rebates.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tax_brackets.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/cd78df92-97c0-4e91-b356-2b525bab2983.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/database.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/paye.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/paye.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/tax_bracket.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/tax_bracket.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/tax_brackets.csv" beforeDir="false" afterPath="$PROJECT_DIR$/static/tax_brackets.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +45,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="2710351c-361e-434b-85a9-be36edfcd14c" />
+  </component>
   <component name="ProjectId" id="1atcbqxW18Ah4nbhoS1cHwkh7wE" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -51,15 +56,21 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/database.db" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Dirk Steynberg\Documents\WorkSpace\Hue\models" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.tax_bracket">
+  <component name="RunManager" selected="Python.app">
+    <configuration name="console_1.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
+      <script-file value="$APPLICATION_CONFIG_DIR$/consoles/db/cd78df92-97c0-4e91-b356-2b525bab2983/console_1.sql" />
+      <script-mode>FILE</script-mode>
+      <method v="2" />
+    </configuration>
     <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Hue" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -74,6 +85,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="database" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Hue" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/models" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/models/database.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -128,8 +161,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.tax_bracket" />
         <item itemvalue="Python.app" />
+        <item itemvalue="Python.tax_bracket" />
+        <item itemvalue="Python.database" />
+        <item itemvalue="Database Script.console_1.sql" />
         <item itemvalue="Python.paye" />
       </list>
     </recent_temporary>
@@ -145,7 +180,9 @@
       <option name="presentableId" value="Default" />
       <updated>1587558404587</updated>
       <workItem from="1587558405934" duration="164000" />
-      <workItem from="1587558589153" duration="8913000" />
+      <workItem from="1587558589153" duration="8937000" />
+      <workItem from="1587619786708" duration="2707000" />
+      <workItem from="1587622504560" duration="1361000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1587558686086</created>
@@ -154,7 +191,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587558686086</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="WIP: added paye class method and tax bracket function">
+      <created>1587571564236</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1587571564236</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -170,44 +214,67 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="WIP: added paye class method and tax bracket function" />
+    <option name="LAST_COMMIT_MESSAGE" value="WIP: added paye class method and tax bracket function" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="2472" y="183" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587620495256">
+      <screen x="1920" y="0" width="1920" height="1050" />
+    </state>
+    <state x="2472" y="183" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834/1920.0.1920.1050@1920.0.1920.1050" timestamp="1587620495256" />
     <state x="2646" y="327" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1587567198039">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
     <state x="2646" y="327" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.834/1920.0.1920.1050@1920.0.1920.1050" timestamp="1587567198039" />
-    <state x="2740" y="437" key="Github.Dialog.Accounts.Choose" timestamp="1587558723755">
+    <state x="2590" y="174" key="#console_1.sql" timestamp="1587621965921">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
-    <state x="2740" y="437" key="Github.Dialog.Accounts.Choose/0.0.1536.834/1920.0.1920.1050@1920.0.1920.1050" timestamp="1587558723755" />
-    <state width="1877" height="257" key="GridCell.Tab.0.bottom" timestamp="1587566987632">
+    <state x="2590" y="174" key="#console_1.sql/0.0.1536.834/1920.0.1920.1050@1920.0.1920.1050" timestamp="1587621965921" />
+    <state x="2660" y="280" key="FileChooserDialogImpl" timestamp="1587620487274">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="257" key="GridCell.Tab.0.bottom/0.0.1536.834/1920.0.1920.1050@1920.0.1920.1050" timestamp="1587566987632" />
-    <state width="1877" height="257" key="GridCell.Tab.0.center" timestamp="1587566987632">
+    <state x="2660" y="280" key="FileChooserDialogImpl/0.0.1536.834/1920.0.1920.1050@1920.0.1920.1050" timestamp="1587620487274" />
+    <state x="2740" y="437" key="Github.Dialog.Accounts.Choose" timestamp="1587571576982">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="257" key="GridCell.Tab.0.center/0.0.1536.834/1920.0.1920.1050@1920.0.1920.1050" timestamp="1587566987632" />
-    <state width="1877" height="257" key="GridCell.Tab.0.left" timestamp="1587566987632">
+    <state x="2740" y="437" key="Github.Dialog.Accounts.Choose/0.0.1536.834/1920.0.1920.1050@1920.0.1920.1050" timestamp="1587571576982" />
+    <state width="1877" height="257" key="GridCell.Tab.0.bottom" timestamp="1587623572737">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="257" key="GridCell.Tab.0.left/0.0.1536.834/1920.0.1920.1050@1920.0.1920.1050" timestamp="1587566987632" />
-    <state width="1877" height="257" key="GridCell.Tab.0.right" timestamp="1587566987632">
+    <state width="1877" height="257" key="GridCell.Tab.0.bottom/0.0.1536.834/1920.0.1920.1050@1920.0.1920.1050" timestamp="1587623572737" />
+    <state width="1877" height="257" key="GridCell.Tab.0.center" timestamp="1587623572736">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="257" key="GridCell.Tab.0.right/0.0.1536.834/1920.0.1920.1050@1920.0.1920.1050" timestamp="1587566987632" />
-    <state x="2472" y="258" key="Vcs.Push.Dialog.v2" timestamp="1587558687947">
+    <state width="1877" height="257" key="GridCell.Tab.0.center/0.0.1536.834/1920.0.1920.1050@1920.0.1920.1050" timestamp="1587623572736" />
+    <state width="1877" height="257" key="GridCell.Tab.0.left" timestamp="1587623572736">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
-    <state x="2472" y="258" key="Vcs.Push.Dialog.v2/0.0.1536.834/1920.0.1920.1050@1920.0.1920.1050" timestamp="1587558687947" />
+    <state width="1877" height="257" key="GridCell.Tab.0.left/0.0.1536.834/1920.0.1920.1050@1920.0.1920.1050" timestamp="1587623572736" />
+    <state width="1877" height="257" key="GridCell.Tab.0.right" timestamp="1587623572736">
+      <screen x="1920" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="257" key="GridCell.Tab.0.right/0.0.1536.834/1920.0.1920.1050@1920.0.1920.1050" timestamp="1587623572736" />
+    <state x="2472" y="258" key="Vcs.Push.Dialog.v2" timestamp="1587571565784">
+      <screen x="1920" y="0" width="1920" height="1050" />
+    </state>
+    <state x="2472" y="258" key="Vcs.Push.Dialog.v2/0.0.1536.834/1920.0.1920.1050@1920.0.1920.1050" timestamp="1587571565784" />
+    <state x="2742" y="412" width="316" height="244" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1587620680775">
+      <screen x="1920" y="0" width="1920" height="1050" />
+    </state>
+    <state x="2742" y="412" width="316" height="244" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1536.834/1920.0.1920.1050@1920.0.1920.1050" timestamp="1587620680775" />
+    <state x="410" y="117" width="1345" height="882" key="dock-window-1" timestamp="1587623066187">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="410" y="117" width="1345" height="882" key="dock-window-1/0.0.1536.834/1920.0.1920.1050@1920.0.1920.1050" timestamp="1587623066187" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Hue$tax_bracket.coverage" NAME="tax_bracket Coverage Results" MODIFIED="1587566987625" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
-    <SUITE FILE_PATH="coverage/Hue$app.coverage" NAME="app Coverage Results" MODIFIED="1587562578964" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Hue$tax_bracket.coverage" NAME="tax_bracket Coverage Results" MODIFIED="1587623495918" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
+    <SUITE FILE_PATH="coverage/Hue$app.coverage" NAME="app Coverage Results" MODIFIED="1587623885447" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Hue$database.coverage" NAME="database Coverage Results" MODIFIED="1587622388528" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
     <SUITE FILE_PATH="coverage/Hue$paye.coverage" NAME="paye Coverage Results" MODIFIED="1587561802507" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
   </component>
 </project>

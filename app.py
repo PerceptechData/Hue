@@ -1,8 +1,11 @@
-from flask import Flask
+from flask import Flask, render_template, request
+import sqlite3
+import time
 
 from models import paye
 
 app = Flask(__name__)
+conn = sqlite3.connect('database.db')
 
 
 @app.route('/')
