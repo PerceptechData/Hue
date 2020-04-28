@@ -6,5 +6,7 @@
 {% block content %}
     <p>Total Earnings: {{ total_earnings }}</p>
     <p>Total Tax Due: {{ total_due }}</p>
+    <p>Bonus Tax Due: {{ bonus_tax_due }}</p>
+    <p>Net Due: {{ net_due }}</p>
     {% include 'views/tax_table.html' %}
 {% endblock %}

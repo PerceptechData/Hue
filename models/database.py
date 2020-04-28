@@ -39,4 +39,32 @@ cursor.execute("""
     )
 """)
 
+# medical tax credit schema
+cursor.execute("""
+    CREATE TABLE IF NOT EXISTS medical_tax_credit (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        type TEXT NOT NULL,
+        credit_value INTEGER NOT NULL,
+        created_at TEXT NOT NULL,
+        expires_at TEXT NOT NULL
+    )
+""")
+
 connector.close()
+
+
+
+
+def get_tax_bracket():
+    """
+    method connects to database and loads tax bracket where created at <= today and expires at >= today
+    to get the relevant tax bracket
+    :return: pandas dataframe of database tax bracket data
+    """
+    connector = sqlite3.connect('../database.db')
+    cursor = connector.cursor()
+    data = pd.read_sql_query(
+        'select * from tax_bracket where date(created_at) <= current_date and date(expires_at) >= current_date',
+        connector)
+    cursor.close()
+    return data
